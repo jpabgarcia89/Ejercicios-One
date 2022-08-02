@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA CALCULAR IMC</h1>
+<br>
+<script>
+	
+
+	function saltarLinea() {
+
+		document.write("<br><br><br>");
+
+	}
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+
+	}
+
+	function calcularImc(peso,altura) {
+
+		return(peso / (altura*altura));
+
+	}
+	//en este ejemplo final, las variales (var) se descartan y se reemplazan ya que la función llama a la acción y los datos.
+
+	// var imcCristian = calcularImc(71,1.72);
+	// var imcFelie = calcularImc(75,1.73);
+
+	imprimir("El promedio del IMC calculado de Cristian y Felipe es: " + (calcularImc(71,1.72)+calcularImc(75,1.73))/2);
+
+	// var imcGabriela = calcularImc(60,1.70);
+	// var imcLuisa = calcularImc(55,1.60);
+
+	imprimir("El promedio del IMC calculado de Gabriela y Luisa es: " + (calcularImc(60,1.70)+calcularImc(55,1.60))/2);
+
+	imprimir("El IMC de Felipe es. " + calcularImc(75,1.73));
+
+	
+	
+</script>

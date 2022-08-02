@@ -1,0 +1,62 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA- PANTALLA DE INICIO</h1>
+<br>
+<script>
+	
+
+	function saltarLinea() {
+
+		document.write("<br><br><br>");
+
+	}
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarLinea();
+
+	}
+
+	
+	var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+   	var intentosMax = 3;
+	var contadorIntentos = 1;
+
+	while (contadorIntentos <= intentosMax) {
+
+		var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+    	var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+		if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+        
+        	alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+        	break ;	
+        	
+       	   
+	    } 
+
+	    else {
+
+		    if (contadorIntentos == 3) {
+	                alert("Agotaste el número permitido de intentos!");
+
+	            } 
+
+	            else {
+	                
+	                alert("Inicio de sesión inválido. Favor intente de nuevo");
+	            }
+	        }
+
+		    contadorIntentos++ ;
+
+		}
+	  
+		
+	imprimir("FIN");
+	
+		
+</script>
