@@ -1,0 +1,27 @@
+<canvas width="600" height="300"> </canvas>
+
+<script>
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+
+	//pincel.fillStyle es el comando de color de relleno de la figura que creo//
+	pincel.fillStyle = "lightblue"; // propiedad de "color"
+	pincel.fillRect(0,0,600,100); // función con 4 parámetros en x/y 
+
+
+	pincel.fillStyle = "white"; // propiedad de "color"
+	pincel.fillRect(0,100,600,100); // función con 4 parámetros en x/y
+	
+	
+	pincel.fillStyle = "lightblue" // propiedad de "color"
+	pincel.fillRect(0,200,600,100); // función con 4 parámetros en x/y
+	
+	
+	pincel.fillStyle = "yellow";
+	pincel.beginPath();
+	pincel.arc(300,150,40,0,2*3.14);
+	pincel.fill();
+	
+
+
+</script>

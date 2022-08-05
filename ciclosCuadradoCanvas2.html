@@ -1,0 +1,49 @@
+<canvas width="600" height="400"> </canvas>
+
+<script>
+	
+	function dibujarCuadrado(x,y,color) {
+		var pantalla = document.querySelector("canvas");
+		var pincel = pantalla.getContext("2d");
+
+
+		//ver porque no funciona strokeStyle
+		pincel.fillStyle = color;
+		pincel.fillRect(x,y,50,50); 
+		pincel.strokeStyle = "black";
+		pincel.fillRect(x,y,50,50);
+
+	}
+
+	
+	var x = 0;
+	while(x < 600) {
+		dibujarCuadrado(x,0,"green");
+		x = x + 50;
+
+		/* para cuadrados vertical c/u de un color distinto
+		dibujarCuadrado(x,50,"red");
+		dibujarCuadrado(x,100,"yellow");
+		dibujarCuadrado(x,150,"green");
+		*/
+		
+	} 
+
+	/*
+	for (var x =0; x < 600; x = x + 50) {
+
+		// dibujarCuadrado(x,0,"green");
+		para cuadrados vertical c/u de un color distinto
+		dibujarCuadrado(x,50,"red");
+		dibujarCuadrado(x,100,"yellow");
+		dibujarCuadrado(x,150,"green");
+
+
+	} */
+	
+	
+
+
+
+
+</script>
